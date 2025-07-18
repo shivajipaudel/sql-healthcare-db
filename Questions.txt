@@ -1,0 +1,73 @@
+EASY LEVEL QUESTIONS
+Basic SELECT, WHERE, UPDATE, and simple filtering logic.
+
+E1. Show first_name, last_name, and gender of patients whose gender is 'M'.
+E2. Show first_name, last_name of patients who do not have allergies (NULL).
+E3. Show first_name of patients that start with the letter 'C'.
+E4. Show first_name, last_name of patients whose weight is between 100 and 120 (inclusive).
+E5. Update the patients table where allergies is NULL and set it to 'NKA'.
+E6. Show full name by concatenating first_name and last_name into one column.
+E7. Show first_name, last_name, and full province name of each patient (e.g., 'Ontario' instead of 'ON').
+E8. Show how many patients have birth_date in the year 2010.
+E9. Show first_name, last_name, and height of the tallest patient.
+E10. Show all columns for patients whose patient_id is in: 1, 45, 534, 879, 1000.
+E11. Show the total number of admissions.
+E12. Show all columns from admissions where admission_date = discharge_date.
+E13. Show patient_id and total number of admissions for patient_id = 100.
+E14. Show unique cities that patients live in within province_id = 'NS'.
+E15. Show first_name, last_name, and birth_date of patients with height > 160 and weight > 70.
+
+MEDIUM LEVEL QUESTIONS
+Aggregation, joins, grouping, filtering, ordering, string manipulation.
+
+M1. Show first_name, last_name, and allergies of patients from 'Hamilton' with non-null allergies.
+M2. Show unique birth years from patients, ordered ascending.
+M3. Show unique first_names that appear only once in the list.
+M4. Show patient_id, first_name where names start and end with 's' and length ≥ 2.
+M5. Show patient_id, first_name, last_name of patients whose diagnosis is 'Dementia'.
+M6. Display first_names of all patients, ordered by length of name then alphabetically.
+M7. Show total number of male and female patients in the same row.
+M8. Show first_name, last_name, allergies for patients allergic to 'Penicillin' or 'Morphine', ordered accordingly.
+M9. Show patient_id, diagnosis for patients admitted multiple times with the same diagnosis.
+M10. Show each city and total number of patients, ordered most to least, then alphabetically.
+M11. Show first_name, last_name, and 'role' (either 'Patient' or 'Doctor').
+M12. Show all allergies by popularity, excluding 'NKA' and NULL.
+M13. Show patients born in the 1970s; include first_name, last_name, and birth_date, ordered by earliest date.
+M14. Show full names formatted like: LASTNAME,firstname (last name UPPERCASE, first name lowercase), ordered by first_name DESC.
+M15. Show province_ids with sum of height ≥ 7000.
+M16. Show difference between max and min weight of patients with last name 'Maroni'.
+M17. Show days (1–31) and how many admissions occurred on each. Order from most to least.
+M18. Show all columns for most recent admission of patient_id = 100.
+M19. Show patient_id, attending_doctor_id, diagnosis where:
+    — Patient ID is odd and doctor is 1, 5, or 19, OR
+    — Doctor ID contains a 2 and patient ID has 3 digits.
+M20. Show first_name, last_name, and total number of admissions each doctor attended.
+M21. For each doctor, show doctor_id, full name, and their first and last admission date.
+M22. Show total number of patients per province, ordered descending.
+M23. For every admission, show patient's full name, diagnosis, and attending doctor’s full name.
+M24. Show first name and number of duplicate patients based on fields.
+M25. Display:
+    — Patient full name
+    — Height (in feet, 1 decimal)
+    — Weight (in pounds, no decimals)
+    — Birth date
+    — Gender (non abbreviated)
+M26. Show patient_id, first_name, last_name from patients who do not have any records in the admissions table.
+
+HARD LEVEL QUESTIONS
+Advanced logic, window functions, complex filtering, derived metrics.
+
+H1. Show max_visits, min_visits, average_visits per day across admissions. Round avg to 2 decimals.
+H2. Group patients by weight bucket (e.g., 100–109 → 100 group). Show total per group, ordered descending.
+H3. Show patient_id, weight, height, and isObese (Obese is defined as BMI ≥ 30).
+H4. Show patient_id, full name, and attending doctor's specialty for patients diagnosed with 'Dementia'.
+H5. Show patient_id and a temp_password in format:
+    → patient_id + length_of_last_name + birth_year
+H6. Calculate total cost of admissions for patients with/without insurance:
+    → Even patient_id = insurance = $10
+    → Odd = no insurance = $50
+H7. Show the percent of patients that have 'M' as their gender. Round to 2 decimals, show as a percent.
+H8. For each admission_date, show total admissions and difference vs previous date.
+H9. Show province names sorted ascending, but always keep 'Ontario' at the top.
+H10. For each doctor, show:
+    — doctor_id, full name, specialty, year, and total admissions for that year.
