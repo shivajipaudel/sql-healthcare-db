@@ -1,5 +1,5 @@
 # SQL Healthcare Analytics Project
-## End-to-end hospital data model with beginner to advanced SQL queries.
+End-to-end hospital data model with beginner to advanced SQL queries.
 
 ## Hospital Database Schema
 <img width="1482" height="1176" alt="Image" src="https://github.com/user-attachments/assets/c2f5325e-e1b0-4230-8ab4-b643ca173a23" /> 
