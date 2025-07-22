@@ -18,5 +18,5 @@ MySQL, JOINs, aggregations, string functions, CASE logic, date functions, and la
 ## Impact  
 Sharpened real-world SQL skills, transformed raw data into actionable insights, and gained healthcare analytics expertise.
 
-This repository features SQL case studies for skill enhancement. Solve real-world scenarios, optimize queries, and improve your data manipulation proficiency.
+This repository features SQL case studies for skill enhancement. Solve real-world scenarios, optimize queries, and improve data manipulation proficiency.
 Inspired by sql-practice.com
